@@ -23,8 +23,8 @@ This React Admin Dashboard is designed to streamline administrative tasks with a
 
 **Installation:**
 
-1. Clone the repository: `git clone https://github.com/yourusername/react-admin-dashboard.git`
-2. Navigate to the project directory: `cd react-admin-dashboard`
+1. Clone the repository: `git clone https://github.com/meet-moradiya/Admin-Dashboard-For-Ecommerce-Store-React.git`
+2. Navigate to the project directory: `cd Admin-Dashboard-For-Ecommerce-Store-React`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 
