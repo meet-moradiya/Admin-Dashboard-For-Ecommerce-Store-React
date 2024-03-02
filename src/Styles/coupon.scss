@@ -1,0 +1,249 @@
+.couponContainer {
+  height: 100vh;
+  overflow: auto;
+  padding: 2rem;
+  padding-right: 3rem;
+
+  > h1 {
+    color: #212529;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .couponSection {
+    @include flex;
+    flex-direction: column;
+    height: 80%;
+
+    code {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      background-color: white;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      position: relative;
+      font-size: 1.8rem;
+      letter-spacing: 0.15rem;
+      cursor: pointer;
+      padding: 1rem 2rem;
+
+      &:hover > p {
+        opacity: 1;
+      }
+
+      > p {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 1rem;
+        background-color: #343a40ee;
+        color: white;
+        font-size: 2.4rem;
+        @include flex;
+
+        > span {
+          padding-bottom: 0.4rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .couponForm {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 2rem;
+    max-width: 55rem;
+    width: 94%;
+    padding: 3rem;
+    background-color: white;
+
+    .couponInput {
+      @include flex(row, space-between, center, 2rem);
+
+      > input {
+        border: 1px solid #6c757d;
+        color: #343a40;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 0.5rem;
+        padding-top: 0.6rem;
+        border-radius: 0.7rem;
+        outline: none;
+
+        &:focus {
+          border: 2px solid #212529;
+        }
+      }
+
+      > input[type="text"] {
+        flex: 3 2 40rem;
+      }
+
+      > input[type="number"] {
+        flex: 1 1 5rem;
+      }
+    }
+
+    > fieldset {
+      border: 1px solid #343a40;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 1rem 0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      @include flex;
+
+      > legend {
+        padding: 0 0.5rem;
+        color: #343a40;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      > div {
+        margin: 0 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    > button {
+      @include buttonStyle;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.couponForm input::-webkit-outer-spin-button,
+.couponForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.couponForm input[type="checkbox"] {
+  --active: #495057;
+  --active-inner: #fff;
+  --focus: 2px #2125294d;
+  --border: #dee2e6;
+  --border-hover: #495057;
+  --background: #fff;
+  --disabled: #f6f8ff;
+  --disabled-inner: #e1e6f9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 21px;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid var(--bc, var(--border));
+  background: var(--b, var(--background));
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+.couponForm input[type="checkbox"]:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+}
+.couponForm input[type="checkbox"]:checked {
+  --b: var(--active);
+  --bc: var(--active);
+  --d-o: 0.3s;
+  --d-t: 0.6s;
+  --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+.couponForm input[type="checkbox"]:disabled {
+  --b: var(--disabled);
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+.couponForm input[type="checkbox"]:disabled:checked {
+  --b: var(--disabled-inner);
+  --bc: var(--border);
+}
+.couponForm input[type="checkbox"]:disabled + label {
+  cursor: not-allowed;
+}
+.couponForm input[type="checkbox"]:hover:not(:checked):not(:disabled) {
+  --bc: var(--border-hover);
+}
+.couponForm input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 var(--focus);
+}
+.couponForm input[type="checkbox"]:not(.switch) {
+  width: 21px;
+}
+.couponForm input[type="checkbox"]:not(.switch):after {
+  opacity: var(--o, 0);
+}
+.couponForm input[type="checkbox"]:not(.switch):checked {
+  --o: 1;
+}
+.couponForm input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.couponForm input[type="checkbox"]:not(.switch) {
+  border-radius: 7px;
+}
+.couponForm input[type="checkbox"]:not(.switch):after {
+  width: 5px;
+  height: 9px;
+  border: 2px solid var(--active-inner);
+  border-top: 0;
+  border-left: 0;
+  left: 6px;
+  top: 3px;
+  transform: rotate(var(--r, 20deg));
+}
+.couponForm input[type="checkbox"]:not(.switch):checked {
+  --r: 43deg;
+}
+
+@media (max-width: 651px) {
+  .couponContainer {
+    padding: 2rem;
+
+    > h1 {
+      font-size: 3rem;
+      margin-top: 4rem;
+    }
+
+    .couponInput {
+      @include flex(row, space-between, center, 2rem);
+      flex-wrap: wrap;
+    }
+
+    fieldset {
+      border: 1px solid #343a40;
+      flex-wrap: wrap;
+
+      > div {
+        min-width: 22rem;
+      }
+      span {
+        margin: 0 2rem 0 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .couponContainer {
+    height: 96vh;
+  }
+}

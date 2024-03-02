@@ -1,0 +1,56 @@
+@media (max-width: 1199.98px) {
+  .adminContainer {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+
+    aside {
+      > .closeBtn {
+        display: block !important;
+      }
+    }
+  }
+
+  #mainlogo {
+    display: block !important;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+// ################################################################
+
+// @media (min-width: 768px) and (max-width: 991.98px) {
+//   .adminContainer {
+//     grid-template-columns: 1fr !important;
+
+//     > aside {
+//       display: none;
+//     }
+//   }
+// }
+
+// // ################################################################
+
+// @media (min-width: 576px) and (max-width: 767.98px) {
+//   .adminContainer {
+//     grid-template-columns: 1fr !important;
+
+//     > aside {
+//       display: none;
+//     }
+//   }
+// }
+
+// // ################################################################
+
+// @media (max-width: 575.98px) {
+//   .adminContainer {
+//     grid-template-columns: 1fr !important;
+
+//     > aside {
+//       display: none;
+//     }
+//   }
+// }

@@ -1,0 +1,75 @@
+.customerContainer {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-right: 3rem;
+
+  .customerBox {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2rem 3rem;
+    max-height: 93.8%;
+    max-width: 97%;
+    min-height: 93.8%;
+    min-width: 97%;
+    display: block;
+    overflow: auto;
+
+    > h4 {
+      @include heading(0.17rem, 700);
+      font-size: 3rem;
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      @include buttonStyle();
+    }
+
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+      @include sqaure(6.5rem);
+    }
+
+    // ################# temp ###################
+    // table {
+    // @include posCenter;
+    // max-width: 96%;
+    // min-height: 80%;
+    // }
+
+    // ################# temp ###################
+    // .table-pagination {
+    //   min-width: 25rem;
+    //   position: absolute;
+    //   left: 50%;
+    //   top: 90%;
+    //   transform: translate(-50%, 0);
+    // }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .customerContainer {
+    padding: 2rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .customerBox {
+    padding: 1.5rem 0.5rem !important;
+    max-height: 86% !important;
+    min-height: 86% !important;
+    max-width: 96% !important;
+    min-width: 96% !important;
+  }
+}

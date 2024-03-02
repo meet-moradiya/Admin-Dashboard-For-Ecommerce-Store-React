@@ -1,0 +1,231 @@
+.dashboard {
+  overflow: auto;
+  padding: 0 1.5rem;
+  > .bar {
+    height: 5rem;
+    @include flex(row, unset);
+    padding: 0 1.6rem;
+    border-bottom: 1px solid #343a40;
+    > input {
+      margin-right: auto;
+      font-size: 1.6rem;
+      @include inputStyle(100%, 0.5rem 0 0 0);
+    }
+  }
+  > .widgetContainer {
+    @include flex(row, space-around, stretch, 3rem);
+    flex-wrap: wrap;
+    margin: 3rem;
+    > .widget {
+      min-width: 25rem;
+      padding: 3rem 1.6rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      @include flex(row, space-between, stretch, 1rem);
+
+      > .widgetInfo {
+        p {
+          color: #343a40;
+          font-size: 1.4rem;
+        }
+        > h4 {
+          color: #343a40;
+          font-size: 2rem;
+        }
+        > span {
+          color: #343a40;
+          font-size: 1.6rem;
+          @include flex(row, space-around, center, 0);
+        }
+      }
+
+      > .widgetCircle {
+        position: relative;
+        @include sqaure(8rem);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background-color: aquamarine;
+
+        &::before {
+          content: "";
+          position: absolute;
+          @include sqaure(6.4rem);
+          background-color: white;
+          border-radius: 100%;
+        }
+
+        > span {
+          position: relative;
+          color: #343a40;
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  > .graphContainer {
+    margin: 3rem;
+    > .revenueChart {
+      width: 100%;
+      padding: 1.8rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+      > h4 {
+        @include heading(0.17rem, 700);
+        font-size: 3rem;
+        color: #343a40;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  > .categoriesChart {
+    padding: 1.8rem;
+    margin: 3rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    @include flex(column, space-around, unset, 0.5rem);
+
+    > h4 {
+      @include heading(0.17rem, 700);
+      font-size: 3rem;
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    > .flexForCategoryChart {
+      max-height: 45rem;
+      overflow: auto;
+
+      > .categoryItems {
+        width: 100%;
+        @include flex(row, space-between, unset, 0.2rem);
+        padding: 0.5rem 0;
+
+        > h4 {
+          color: #343a40;
+          font-size: 1.4rem;
+          flex: 1 1 8.5rem;
+          padding-left: 2rem;
+        }
+
+        > .bgDiv {
+          background-color: #e9ecef;
+          border-radius: 2rem;
+          max-height: 1rem;
+          flex: 2 2 10rem;
+          margin-top: 0.7rem;
+
+          > div {
+            height: 100%;
+            border-radius: 2rem;
+          }
+        }
+
+        > span {
+          color: #343a40;
+          text-align: center;
+          font-size: 1.4rem;
+          flex: 0.4 0.4 4rem;
+        }
+      }
+    }
+  }
+  > .transactionContainer {
+    margin: 3rem;
+    > .transactionChart {
+      padding: 1.8rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+      > .transactionBox {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        overflow-x: auto;
+
+        > table {
+          th {
+            width: 100%;
+            max-width: 10rem;
+          }
+        }
+
+        > h4 {
+          @include heading(0.17rem, 700);
+          font-size: 3rem;
+          color: #343a40;
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+
+        button {
+          @include buttonStyle();
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .dashboard {
+    padding: 0 1rem;
+
+    > .widgetContainer {
+      margin: 1.8rem;
+    }
+
+    > .graphContainer {
+      margin: 3rem 0.7rem;
+      > .revenueChart {
+        padding: 1.6rem;
+
+        > h4 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    > .categoriesChart {
+      padding: 0.5rem;
+      margin: 3rem 0.7rem;
+
+      > h4 {
+        font-size: 2rem;
+        margin: 1.8rem 0;
+      }
+
+      > .flexForCategoryChart {
+        max-height: 45rem;
+        overflow: auto;
+
+        > .categoryItems {
+          > h4 {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+    > .transactionContainer {
+      margin: 3rem 0.7rem;
+      > .transactionChart {
+        padding: 0.7rem;
+
+        > .transactionBox {
+          > h4 {
+            font-size: 2rem;
+            margin: 1.8rem 0;
+          }
+        }
+      }
+    }
+  }
+}

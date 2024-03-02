@@ -1,0 +1,89 @@
+@mixin heading($spacing: 3px, $weight: 300, $case: uppercase) {
+  letter-spacing: $spacing;
+  font-weight: $weight;
+  text-transform: $case;
+}
+
+@mixin flex($dir: row, $justifyContent: center, $alineItems: center, $gap: 1rem) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justifyContent;
+  align-items: $alineItems;
+  gap: $gap;
+}
+
+@mixin grid($col: 1fr, $gap: 1rem, $row: unset) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+  gap: $gap;
+}
+
+@mixin inputStyle($w: 100%, $p: 1rem, $bgColor: inherit, $border: none) {
+  padding: $p;
+  width: $w;
+  background-color: $bgColor;
+  border: $border;
+  outline: none;
+}
+
+@mixin posCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin sqaure($s: 1rem) {
+  height: $s;
+  width: $s;
+}
+
+@mixin buttonStyle {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #333533;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  transition: all 250ms;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+
+  &:hover,
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: #343a40;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    background-color: #f8f9fa;
+    cursor: auto;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      color: #333533;
+      transform: none;
+    }
+  }
+}

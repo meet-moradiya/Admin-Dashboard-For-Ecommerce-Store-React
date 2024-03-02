@@ -1,0 +1,85 @@
+.chartContainer {
+  max-height: 100vh;
+  overflow: auto;
+  padding: 2.5rem;
+
+  > h1 {
+    color: #212529;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  > section {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2rem 3rem;
+    margin: 3rem auto;
+
+    > h4 {
+      @include heading(0.17rem, 700);
+      font-size: 3rem;
+      color: #343a40;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    > div {
+      max-width: 40rem;
+      margin: 2.5rem auto;
+
+      h4 {
+        @include heading(0.17rem, 700);
+        font-size: 3rem;
+        color: #343a40;
+        text-align: center;
+        margin: 1.5rem 0;
+      }
+    }
+  }
+}
+
+.doughnutChartComponent {
+  position: relative;
+
+  > p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .chartContainer {
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .doughnutChartComponent {
+    > p {
+      display: none;
+    }
+  }
+
+  .chartContainer {
+    padding: 1rem !important;
+    > h1 {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    > section {
+      > h4 {
+        font-size: 2rem;
+      }
+      > div {
+        h4 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

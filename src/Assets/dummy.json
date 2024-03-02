@@ -1,0 +1,296 @@
+{
+  "widget": [
+    {
+      "heading": "Revenue",
+      "percent": 40,
+      "amount": true,
+      "value": 132000,
+      "color": "#ef476f"
+    },
+    {
+      "heading": "Users",
+      "percent": 17,
+      "amount": false,
+      "value": 133,
+      "color": "#1b9aaa"
+    },
+    {
+      "heading": "Transactions",
+      "percent": -62,
+      "amount": false,
+      "value": 18750,
+      "color": "#06d6a0"
+    },
+    {
+      "heading": "Products",
+      "percent": 83,
+      "amount": false,
+      "value": 83,
+      "color": "#ffc43d"
+    }
+  ],
+  "categories": [
+    {
+      "value": 62,
+      "heading": "Electronics"
+    },
+    {
+      "value": 85,
+      "heading": "Clothing & Apparel"
+    },
+    {
+      "value": 65,
+      "heading": "Home & Kitchen"
+    },
+    {
+      "value": 73,
+      "heading": "Health & Beauty"
+    },
+    {
+      "value": 89,
+      "heading": "Sports & Outdoors"
+    },
+    {
+      "value": 88,
+      "heading": "Toys & Games"
+    },
+    {
+      "value": 60,
+      "heading": "Books & Media"
+    },
+    {
+      "value": 31,
+      "heading": "Automotive"
+    },
+    {
+      "value": 74,
+      "heading": "Jewelry & Accessories"
+    },
+    {
+      "value": 57,
+      "heading": "Furniture & Decor"
+    },
+    {
+      "value": 44,
+      "heading": "Pet Supplies"
+    },
+    {
+      "value": 72,
+      "heading": "Food & Grocery"
+    },
+    {
+      "value": 64,
+      "heading": "Tools & Home Improvement"
+    },
+    {
+      "value": 43,
+      "heading": "Baby & Kids"
+    },
+    {
+      "value": 59,
+      "heading": "Office Supplies"
+    },
+    {
+      "value": 36,
+      "heading": "Arts & Crafts"
+    },
+    {
+      "value": 85,
+      "heading": "Garden & Outdoor Living"
+    },
+    {
+      "value": 47,
+      "heading": "Travel & Luggage"
+    },
+    {
+      "value": 90,
+      "heading": "Fitness & Exercise"
+    },
+    {
+      "value": 75,
+      "heading": "Party Supplies"
+    },
+    {
+      "value": 33,
+      "heading": "Musical Instruments"
+    },
+    {
+      "value": 82,
+      "heading": "Electronics Accessories"
+    },
+    {
+      "value": 67,
+      "heading": "Watches"
+    },
+    {
+      "value": 84,
+      "heading": "Bags & Backpacks"
+    },
+    {
+      "value": 55,
+      "heading": "Personal Care & Hygiene"
+    },
+    {
+      "value": 32,
+      "heading": "Cookware & Bakeware"
+    },
+    {
+      "value": 89,
+      "heading": "Home Appliances"
+    },
+    {
+      "value": 49,
+      "heading": "Stationery & Writing Supplies"
+    },
+    {
+      "value": 41,
+      "heading": "DIY & Craft Supplies"
+    },
+    {
+      "value": 58,
+      "heading": "Sporting Goods"
+    },
+    {
+      "value": 78,
+      "heading": "Shoes & Footwear"
+    },
+    {
+      "value": 54,
+      "heading": "Gadgets & Gizmos"
+    },
+    {
+      "value": 37,
+      "heading": "Computer Hardware"
+    },
+    {
+      "value": 48,
+      "heading": "Cosmetics & Makeup"
+    },
+    {
+      "value": 52,
+      "heading": "Vintage & Collectibles"
+    },
+    {
+      "value": 69,
+      "heading": "Photography & Videography"
+    },
+    {
+      "value": 86,
+      "heading": "Specialty Foods"
+    },
+    {
+      "value": 57,
+      "heading": "Eco-friendly Products"
+    },
+    {
+      "value": 76,
+      "heading": "Office Furniture"
+    },
+    {
+      "value": 62,
+      "heading": "Handmade Crafts"
+    },
+    {
+      "value": 81,
+      "heading": "Educational Toys & Games"
+    },
+    {
+      "value": 77,
+      "heading": "Smart Home Devices"
+    },
+    {
+      "value": 34,
+      "heading": "Outdoor Clothing & Gear"
+    },
+    {
+      "value": 83,
+      "heading": "Board Games & Puzzles"
+    },
+    {
+      "value": 42,
+      "heading": "Musical Equipment & Gear"
+    },
+    {
+      "value": 66,
+      "heading": "Art Supplies"
+    },
+    {
+      "value": 71,
+      "heading": "Camping & Hiking Gear"
+    },
+    {
+      "value": 64,
+      "heading": "Virtual Reality Accessories"
+    },
+    {
+      "value": 50,
+      "heading": "Luxury Watches & Jewelry"
+    },
+    {
+      "value": 90,
+      "heading": "Home Decor & Accents"
+    },
+    {
+      "value": 38,
+      "heading": "Other"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "RHDcUEMg",
+      "amount": 4500,
+      "quantity": 5,
+      "discount": 999,
+      "status": "Processing"
+    },
+    {
+      "id": "kFByaRLk",
+      "amount": 1230,
+      "quantity": 2,
+      "discount": 152,
+      "status": "Processing"
+    },
+    {
+      "id": "zzrSQkhj",
+      "amount": 1546,
+      "quantity": 2,
+      "discount": 210,
+      "status": "Shipped"
+    },
+    {
+      "id": "eNHtjnp",
+      "amount": 4568,
+      "quantity": 4,
+      "discount": 1295,
+      "status": "Processing"
+    },
+    {
+      "id": "gTmycGJ",
+      "amount": 1567,
+      "quantity": 1,
+      "discount": 159,
+      "status": "Shipped"
+    },
+    {
+      "id": "faWCojY",
+      "amount": 3654,
+      "quantity": 3,
+      "discount": 450,
+      "status": "Shipped"
+    },
+    {
+      "id": "miHzJUJN",
+      "amount": 4222,
+      "quantity": 3,
+      "discount": 129,
+      "status": "Processing"
+    },
+    {
+      "id": "WURHuuNo",
+      "amount": 5155,
+      "quantity": 5,
+      "discount": 1299,
+      "status": "Processing"
+    }
+  ]
+}
